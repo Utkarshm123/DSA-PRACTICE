@@ -4,7 +4,7 @@ class Solution {
         int n = nums.length;
         int[] answer = new int[n];
 
-        // Prefix product
+
         int prefix = 1;
 
         for (int i = 0; i < n; i++) {
@@ -12,7 +12,7 @@ class Solution {
             prefix = prefix * nums[i];
         }
 
-        // Suffix product
+        
         int suffix = 1;
 
         for (int i = n - 1; i >= 0; i--) {
